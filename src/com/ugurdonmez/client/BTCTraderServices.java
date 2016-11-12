@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.ugurdonmez.client;
 
 import com.google.common.collect.ImmutableList;
 import com.google.gson.Gson;
 import com.ugurdonmez.data.*;
-import data.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -356,7 +350,7 @@ public class BTCTraderServices {
      * @throws InvalidKeyException
      * @throws NoSuchAlgorithmException
      */
-    protected static Optional<OrderResult> postSellOrder(boolean isMarketOrder, double price, double amount,
+    protected static Optional<OrderResult> postSellOrder(int isMarketOrder, double price, double amount,
                                                       double total, AuthenticationResult authenticationResult)
             throws IOException, InvalidKeyException, NoSuchAlgorithmException {
 

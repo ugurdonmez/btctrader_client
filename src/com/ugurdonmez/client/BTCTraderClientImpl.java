@@ -2,7 +2,6 @@ package com.ugurdonmez.client;
 
 import com.google.common.collect.ImmutableList;
 import com.ugurdonmez.data.*;
-import data.*;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.io.IOException;
@@ -155,7 +154,7 @@ public class BTCTraderClientImpl implements BTCTraderClient {
     }
 
     @Override
-    public Optional<OrderResult> sellBTCTraderOrder(boolean isMarketOrder, double price, double amount, double total) {
+    public Optional<OrderResult> sellBTCTraderOrder(int isMarketOrder, double price, double amount, double total) {
         try {
             return BTCTraderServices.postSellOrder(isMarketOrder, price, amount, total,
                     BTCTraderServices.getAuthentication());

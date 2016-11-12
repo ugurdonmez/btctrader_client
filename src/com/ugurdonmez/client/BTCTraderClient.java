@@ -2,7 +2,6 @@ package com.ugurdonmez.client;
 
 import com.google.common.collect.ImmutableList;
 import com.ugurdonmez.data.*;
-import data.*;
 
 import java.util.Optional;
 
@@ -31,7 +30,7 @@ public interface BTCTraderClient {
 
     Optional<OrderResult> buyBTCTraderOrder(int isMarketOrder, double price, double amount, double total);
 
-    Optional<OrderResult> sellBTCTraderOrder(boolean isMarketOrder, double price, double amount, double total);
+    Optional<OrderResult> sellBTCTraderOrder(int isMarketOrder, double price, double amount, double total);
 
     Optional<DepositMoneyResult> getBTCTraderDepositMoneyInfoResult();
 
