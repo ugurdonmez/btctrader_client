@@ -118,7 +118,7 @@ public class BTCTraderServices {
             in.close();
 
             Gson g = new Gson();
-            return ImmutableList.of(g.fromJson(response.toString(), Trade[].class));
+            return ImmutableList.copyOf((Trade[]) g.fromJson(response.toString(), Trade[].class));
         } else {
             return ImmutableList.of();
         }
@@ -151,7 +151,7 @@ public class BTCTraderServices {
             in.close();
 
             Gson g = new Gson();
-            return ImmutableList.of(g.fromJson(response.toString(), OHCLData[].class));
+            return ImmutableList.copyOf((OHCLData[]) g.fromJson(response.toString(), OHCLData[].class));
         } else {
             return ImmutableList.of();
         }
@@ -216,7 +216,7 @@ public class BTCTraderServices {
             in.close();
 
             Gson g = new Gson();
-            return ImmutableList.of(g.fromJson(response.toString(), UserTransaction[].class));
+            return ImmutableList.copyOf((UserTransaction[]) g.fromJson(response.toString(), UserTransaction[].class));
         } else {
             return ImmutableList.of();
         }
@@ -248,7 +248,7 @@ public class BTCTraderServices {
             in.close();
 
             Gson g = new Gson();
-            return ImmutableList.of(g.fromJson(response.toString(), OrderResult[].class));
+            return ImmutableList.copyOf((OrderResult[]) g.fromJson(response.toString(), OrderResult[].class));
         } else {
             return ImmutableList.of();
         }

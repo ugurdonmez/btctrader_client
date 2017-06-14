@@ -1,4 +1,4 @@
-package com.ugurdonmez.trade.test;
+package com.ugurdonmez.trade;
 
 import com.google.common.collect.ImmutableList;
 import com.ugurdonmez.client.BTCTraderClient;

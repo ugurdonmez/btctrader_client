@@ -11,17 +11,17 @@ public class TestSell {
 
     public static void main(String [] args) {
 
-        // MakeOrderThread makeOrderThread = new MakeOrderThread(OrderType.SELL, 1701, 0.02, 4);
+        MakeOrderThread makeOrderThread = new MakeOrderThread(OrderType.SELL, 1675, 0.01,10);
 
-        // Thread thread = new Thread(makeOrderThread);
-
-        // thread.run();
-
-        SellThread sellThread = new SellThread(1675, 0.01, 0.5);
-
-        Thread thread = new Thread(sellThread);
+        Thread thread = new Thread(makeOrderThread);
 
         thread.run();
+
+//        SellThread sellThread = new SellThread(1675, 2, 0.5);
+
+//        Thread thread = new Thread(sellThread);
+
+//        thread.run();
 
     }
 
